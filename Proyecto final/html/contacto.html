@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/estilos.css">
+        <title>Concesionaria</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    
+    <nav>
+        <img id='logo' src="/img/logo.jpg" alt="Logo de la empresa">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>Motos</li>
+            <li>Coches Usados</li>
+            <li>0 km</li>
+            <li>¿Dónde estamos?</li>
+        </ul>
+    </nav>
+
+
+    <h2>Formulario de Contacto</h2>
+
+    <form   action="https://formspree.io/f/xgveyqpl" method="POST">
+        <!-- Campo para el nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <!-- Campo para el correo -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br><br>
+
+        <!-- Campo para el celular -->
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular" required>
+        <br><br>
+
+        <!-- Campo para el motivo de consulta -->
+        <label for="motivo">Motivo de Consulta:</label>
+        <textarea id="motivo" name="motivo" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <!-- Botón de envío -->
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer>
+        <ul>
+            <li>Home</li>
+            <li>Acerca de</li>
+            <li>Ayuda</li>
+            <li>Contacto</li>
+        </ul>
+    </footer>
+</body>
+</html>

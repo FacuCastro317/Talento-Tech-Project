@@ -1,10 +1,8 @@
-html {
-    background-color: rgba(83, 106, 109, 0.445);
-}
 
 #logo{
-    height: 10%;
-    width: 10%;
+    height: 8%;
+    width: 8%;
+    margin: -3% 0;
 }
 
 /* Estilo general de la barra de navegación */
@@ -18,7 +16,7 @@ nav {
 /* Eliminar el estilo de lista predeterminado */
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0 20%;
     margin: 0;
 }
 
@@ -44,7 +42,7 @@ nav ul li a:hover {
 
 /* Estilo general del footer */
 footer {
-    background-color: #4579fb;
+    background-color: #000000;
     color: #aaa;
     padding: 20px;
     text-align: left;
@@ -80,6 +78,10 @@ footer ul li a {
 /* Efecto al pasar el mouse por encima del enlace */
 footer ul li a:hover {
     color: #fff;
+}
+
+.container_buscador {
+    margin: 3% 20% 3% 30%;
 }
 
 .custom-card {
@@ -126,4 +128,113 @@ footer ul li a:hover {
     outline: none;
   }
   
-  
+.sucursal-box {
+    position: relative;
+    border: 2px solid red; /* Borde negro */
+    padding: 20px; /* Espaciado interno */
+    margin: 5% 5%; /* Separación con otros elementos */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.sucursal-box::before {
+    content: ""; /* Elemento visual */
+    position: absolute;
+    top: -8px; /* Espaciado para el borde rojo */
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 3px solid black; /* Borde rojo externo */
+    border-radius: 14px; /* Redondeo mayor para que coincida */
+}
+
+.iframe-maps {
+    border: 2px solid black;
+    border-radius: 10px;
+    position:relative;
+    margin-left: 10%;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.maps-box{
+    display: flex;
+}
+
+.mas-info-box {
+    display: inline-block;
+    padding: 10%;
+}
+
+.form-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin: 3% 0;
+}
+
+/* Estilo del formulario */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 30%;
+}
+
+/* Estilo de las etiquetas */
+.form-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo de los inputs y textarea */
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón de envío */
+.form-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}

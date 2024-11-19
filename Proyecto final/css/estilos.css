@@ -1,3 +1,10 @@
+body {
+    background-image: url('../img/a-car-salesman-handing-a-key-to-a-new-vehicle-owner-free-photo.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-attachment: fixed; /* Hace que la imagen se mantenga fija al hacer scroll */
+}
 
 #logo{
     height: 8%;
@@ -82,6 +89,10 @@ footer ul li a:hover {
 
 .container_buscador {
     margin: 3% 20% 3% 30%;
+}
+
+#presentacion_vehiculos_nuevos {
+    margin: 2% 5%;
 }
 
 .custom-card {
@@ -237,4 +248,31 @@ footer ul li a:hover {
 
 .form-button:hover {
     background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .form-title {
+        font-size: 20px; /* Reduce el tamaño del título */
+    }
+
+    .contact-form {
+        margin-left: 0; /* Centra el formulario */
+        padding: 15px; /* Ajusta el padding */
+        box-shadow: none; /* Elimina la sombra en pantallas pequeñas */
+    }
+
+    .form-label {
+        font-size: 12px; /* Reduce el tamaño de las etiquetas */
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 12px; /* Reduce el tamaño del texto en inputs */
+        padding: 8px; /* Ajusta el padding */
+    }
+
+    .form-button {
+        font-size: 14px; /* Ajusta el tamaño del botón */
+        padding: 8px; /* Reduce el espacio del botón */
+    }
 }
